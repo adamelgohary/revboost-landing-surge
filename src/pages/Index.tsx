@@ -2,13 +2,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselPrevious, 
-  CarouselNext 
-} from "@/components/ui/carousel";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, BarChart2, BrainCircuit, CheckCircle, Cog, Rocket, ThumbsUp, Users } from "lucide-react";
@@ -21,14 +14,13 @@ const Index = () => {
       <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-sm">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="RevBooster Logo" className="h-8" />
+            <img src="/logo.svg" alt="RevBooster Logo" className="h-8" />
             <span className="font-bold text-xl bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">RevBooster</span>
           </div>
           
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="text-sm font-medium hover:text-orange-500 transition-colors">Services</a>
             <a href="#testimonials" className="text-sm font-medium hover:text-orange-500 transition-colors">Testimonials</a>
-            <a href="#portfolio" className="text-sm font-medium hover:text-orange-500 transition-colors">Portfolio</a>
             <a href="#contact" className="text-sm font-medium hover:text-orange-500 transition-colors">Contact</a>
           </nav>
           
@@ -78,7 +70,7 @@ const Index = () => {
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <Button size="lg" variant="outline">
-                  View Our Work
+                  Learn More
                 </Button>
               </div>
             </div>
@@ -219,42 +211,6 @@ const Index = () => {
               <p className="text-gray-600">Efficient processes that get your website up and running quickly.</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Recent Work</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Take a look at some of our favorite projects we've delivered for our clients.</p>
-          </div>
-          
-          <Carousel className="w-full max-w-5xl mx-auto">
-            <CarouselContent>
-              {[1, 2, 3].map((item) => (
-                <CarouselItem key={item} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card className="overflow-hidden border-0 shadow-md hover:shadow-xl transition-shadow">
-                      <img 
-                        src={`https://images.unsplash.com/photo-155143467${item}-e076c223a692?auto=format&fit=crop&w=400&q=80`} 
-                        alt={`Portfolio item ${item}`} 
-                        className="w-full h-48 object-cover"
-                      />
-                      <CardContent className="p-4">
-                        <h3 className="font-bold">Project {item}</h3>
-                        <p className="text-sm text-gray-600">Web Development</p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <div className="flex justify-center mt-4 gap-2">
-              <CarouselPrevious className="relative inset-0 translate-y-0 left-0" />
-              <CarouselNext className="relative inset-0 translate-y-0 right-0" />
-            </div>
-          </Carousel>
         </div>
       </section>
 
@@ -456,7 +412,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src="/logo.png" alt="RevBooster Logo" className="h-8" />
+                <img src="/logo.svg" alt="RevBooster Logo" className="h-8" />
                 <span className="font-bold text-xl bg-gradient-to-r from-orange-500 to-pink-600 bg-clip-text text-transparent">RevBooster</span>
               </div>
               <p className="text-gray-400 mb-4">Elevating your online presence with exceptional web experiences.</p>
