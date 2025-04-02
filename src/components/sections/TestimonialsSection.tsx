@@ -23,7 +23,7 @@ const StarRating = () => {
 
 const TestimonialCard = ({ quote, author, position, initials }: TestimonialProps) => {
   return (
-    <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm">
+    <Card className="border-0 shadow-lg">
       <CardContent className="p-6">
         <div className="flex flex-col h-full">
           <div className="mb-4">
@@ -70,7 +70,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20">
+    <section id="testimonials" className="py-20 bg-gradient-to-br from-orange-50 to-pink-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>

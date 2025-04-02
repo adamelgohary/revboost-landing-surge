@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-pink-50 z-0"></div>
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">

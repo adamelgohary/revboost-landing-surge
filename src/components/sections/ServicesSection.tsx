@@ -17,7 +17,7 @@ const ServiceCard = ({
   iconBgColor: string 
 }) => {
   return (
-    <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-white/80 backdrop-blur-sm">
+    <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
       <CardContent className="pt-6">
         <div className={`rounded-full ${iconBgColor} p-3 w-12 h-12 flex items-center justify-center mb-5`}>
           <Icon className="h-6 w-6 text-orange-500" />
@@ -63,7 +63,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
