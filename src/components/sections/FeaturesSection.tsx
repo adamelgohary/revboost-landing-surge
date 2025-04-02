@@ -10,7 +10,7 @@ interface FeatureProps {
 
 const FeatureCard = ({ icon: Icon, title, description }: FeatureProps) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
+    <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md">
       <div className="rounded-full bg-gradient-to-r from-orange-500 to-pink-600 p-3 w-12 h-12 flex items-center justify-center mb-4">
         <Icon className="h-6 w-6 text-white" />
       </div>
@@ -45,7 +45,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose RevBooster</h2>

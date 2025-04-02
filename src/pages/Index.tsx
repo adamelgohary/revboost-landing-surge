@@ -11,14 +11,17 @@ import ContactSection from "@/components/sections/ContactSection";
 
 const Index = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen relative">
       <Navbar />
-      <HeroSection />
-      <ServicesSection />
-      <FeaturesSection />
-      <TestimonialsSection />
-      <CtaSection />
-      <ContactSection />
+      <div className="absolute inset-0 top-16 bottom-auto bg-gradient-to-b from-orange-50 via-pink-50 to-orange-50 -z-10 min-h-[calc(100vh-4rem)]"></div>
+      <main className="flex-grow">
+        <HeroSection />
+        <ServicesSection />
+        <FeaturesSection />
+        <TestimonialsSection />
+        <CtaSection />
+        <ContactSection />
+      </main>
       <Footer />
     </div>
   );
